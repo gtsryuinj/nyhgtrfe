@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: kmntgvc
+  name: desxzt
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "kmntgvc"
+  - name: "desxzt"
     port: 8080
   selector:
-    app: kmntgvc
+    app: desxzt
