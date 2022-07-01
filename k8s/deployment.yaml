@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: desxzt
+  name: asxcvgtr
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: desxzt
+      app: asxcvgtr
   template:
     metadata:
       labels:
-        app: desxzt
+        app: asxcvgtr
     spec:
       containers:
-      - image: okteto.dev/desxzt:latest
-        name: desxzt
+      - image: okteto.dev/asxcvgtr:latest
+        name: asxcvgtr
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.greenmangaming.com"
         - name: Vless_UUID
-          value: "6dcde566-cdb5-4de2-8b5e-a03962e53fed"
+          value: "5456a4d8-9510-4210-a2e1-93efa65a537b"
         - name: Vless_Path
-          value: "/6dcde566-cdb5-4de2-8b5e-a03962e53fed-vless"
+          value: "/5456a4d8-9510-4210-a2e1-93efa65a537b-vless"
         - name: Vmess_UUID
-          value: "6dcde566-cdb5-4de2-8b5e-a03962e53fed"
+          value: "5456a4d8-9510-4210-a2e1-93efa65a537b"
         - name: Vmess_Path
-          value: "/6dcde566-cdb5-4de2-8b5e-a03962e53fed-vmess"
+          value: "/5456a4d8-9510-4210-a2e1-93efa65a537b-vmess"
         - name: Share_Path
           value: "/share233"
