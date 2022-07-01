@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hyjy
+  name: fgnbhy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hyjy
+      app: fgnbhy
   template:
     metadata:
       labels:
-        app: hyjy
+        app: fgnbhy
     spec:
       containers:
-      - image: okteto.dev/hyjy:latest
-        name: hyjy
+      - image: okteto.dev/fgnbhy:latest
+        name: fgnbhy
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "icook.tw"
+          value: "www.greenmangaming.com"
         - name: Vless_UUID
-          value: "110df521-690e-4522-8a12-965677aaeb93"
+          value: "060d42a6-d041-48a9-94ff-57610e999225"
         - name: Vless_Path
-          value: "/110df521-690e-4522-8a12-965677aaeb93-vless"
+          value: "/060d42a6-d041-48a9-94ff-57610e999225-vless"
         - name: Vmess_UUID
-          value: "110df521-690e-4522-8a12-965677aaeb93"
+          value: "060d42a6-d041-48a9-94ff-57610e999225"
         - name: Vmess_Path
-          value: "/110df521-690e-4522-8a12-965677aaeb93-vmess"
+          value: "/060d42a6-d041-48a9-94ff-57610e999225-vmess"
         - name: Share_Path
           value: "/share233"
