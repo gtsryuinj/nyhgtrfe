@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: fgnbhy
+  name: kmntgvc
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "fgnbhy"
+  - name: "kmntgvc"
     port: 8080
   selector:
-    app: fgnbhy
+    app: kmntgvc
