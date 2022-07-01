@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hyjy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hyjy
+  template:
+    metadata:
+      labels:
+        app: hyjy
+    spec:
+      containers:
+      - image: okteto.dev/hyjy:latest
+        name: hyjy
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: ProxySite
+          value: "icook.tw"
+        - name: Vless_UUID
+          value: "110df521-690e-4522-8a12-965677aaeb93"
+        - name: Vless_Path
+          value: "/110df521-690e-4522-8a12-965677aaeb93-vless"
+        - name: Vmess_UUID
+          value: "110df521-690e-4522-8a12-965677aaeb93"
+        - name: Vmess_Path
+          value: "/110df521-690e-4522-8a12-965677aaeb93-vmess"
+        - name: Share_Path
+          value: "/share233"
