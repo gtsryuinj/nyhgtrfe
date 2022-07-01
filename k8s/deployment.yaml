@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fgnbhy
+  name: kmntgvc
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: fgnbhy
+      app: kmntgvc
   template:
     metadata:
       labels:
-        app: fgnbhy
+        app: kmntgvc
     spec:
       containers:
-      - image: okteto.dev/fgnbhy:latest
-        name: fgnbhy
+      - image: okteto.dev/kmntgvc:latest
+        name: kmntgvc
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.greenmangaming.com"
         - name: Vless_UUID
-          value: "060d42a6-d041-48a9-94ff-57610e999225"
+          value: "c1f9c59d-08c2-47bf-a227-fe3999bd3161"
         - name: Vless_Path
-          value: "/060d42a6-d041-48a9-94ff-57610e999225-vless"
+          value: "/c1f9c59d-08c2-47bf-a227-fe3999bd3161-vless"
         - name: Vmess_UUID
-          value: "060d42a6-d041-48a9-94ff-57610e999225"
+          value: "c1f9c59d-08c2-47bf-a227-fe3999bd3161"
         - name: Vmess_Path
-          value: "/060d42a6-d041-48a9-94ff-57610e999225-vmess"
+          value: "/c1f9c59d-08c2-47bf-a227-fe3999bd3161-vmess"
         - name: Share_Path
           value: "/share233"
