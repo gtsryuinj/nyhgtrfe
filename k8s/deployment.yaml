@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: asxcvgtr
+  name: zsawq
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: asxcvgtr
+      app: zsawq
   template:
     metadata:
       labels:
-        app: asxcvgtr
+        app: zsawq
     spec:
       containers:
-      - image: okteto.dev/asxcvgtr:latest
-        name: asxcvgtr
+      - image: okteto.dev/zsawq:latest
+        name: zsawq
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.greenmangaming.com"
         - name: Vless_UUID
-          value: "5456a4d8-9510-4210-a2e1-93efa65a537b"
+          value: "619756a9-2300-43f7-9f7c-01db76bd3ada"
         - name: Vless_Path
-          value: "/5456a4d8-9510-4210-a2e1-93efa65a537b-vless"
+          value: "/619756a9-2300-43f7-9f7c-01db76bd3ada-vless"
         - name: Vmess_UUID
-          value: "5456a4d8-9510-4210-a2e1-93efa65a537b"
+          value: "619756a9-2300-43f7-9f7c-01db76bd3ada"
         - name: Vmess_Path
-          value: "/5456a4d8-9510-4210-a2e1-93efa65a537b-vmess"
+          value: "/619756a9-2300-43f7-9f7c-01db76bd3ada-vmess"
         - name: Share_Path
           value: "/share233"
